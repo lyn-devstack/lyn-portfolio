@@ -3,5 +3,53 @@
   "role": "Software Engineer",
   "description": "Building the future of backend architectures with a touch of minimalism.",
   "viewProjects": "View Projects",
-  "contact": "Contact"
+  "contact": "Contact",
+
+  "labels": {
+    "viewArchitecture": "View Architecture",
+    "technicalSource": "Technical diagram extracted from the project's official documentation.",
+    "authorNote": "Author's Note:",
+    "noteInfinite": "This project was developed under MVC architecture, prioritizing data integrity and scalability.",
+    "noteBooky": "This project was developed under native architecture with Firebase, focusing on persistence and real-time synchronization.",
+    "challenge": "The Challenge",
+    "architecture": "Architecture",
+    "security": "Security",
+    "database": "Database",
+    "functionality": "Functionality",
+    "stack": "Tech Stack",
+    "uxui": "UX/UI",
+    "roles": "Role Management"
+  },
+  
+  "projects": {
+    "infinite": {
+      "description": "All-in-one management system for beauty centers. Robust appointment, stock, and user control.",
+      "challenge": "Digitalizing a complex physical scheduling system to eliminate booking conflicts and centralize service management.",
+      "architecture": "Development based on the Model-View-Controller (MVC) pattern to ensure scalability and clean code maintenance.",
+      "security": "Implementation of SEO-friendly routes via .htaccess, sensitive data encryption, and asynchronous session validation.",
+      "database": "Normalized relational schema (MySQL) featuring automated triggers for real-time inventory updates after each service."
+    },
+    "bookyBloom": {
+      "description": "Interactive digital library built with Kotlin. PDF catalog management and real-time reader community.",
+      "functionality": "PDF rendering engine with integrated download capabilities for seamless offline reading.",
+      "stackInfo": "Full Firebase integration: Realtime Database for user interaction and Storage for binary file hosting.",
+      "uxui": "Native Android interface with full Dark Mode support and Material Design-based navigation.",
+      "roles": "Differentiated permission system separating administrative management tools from the end-user reading module."
+    }
+  },
+  "skills": {
+    "title": "Technical Specialization",
+    "mainStack": ".NET Ecosystem (Professional Focus)",
+    "mobile": "Mobile Development",
+    "database": "Data & Cloud",
+    "other": "Other Technologies (Academics)"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Currently open to .NET Core opportunities.",
+    "copyEmail": "Copy Email",
+    "copied": "Copied!",
+    "linkedin": "Connect on LinkedIn",
+    "github": "View Repositories"
+  }
 }

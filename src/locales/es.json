@@ -3,5 +3,53 @@
   "role": "Ingeniera de Software",
   "description": "Construyendo el futuro de las arquitecturas backend con un toque de minimalismo.",
   "viewProjects": "Ver Proyectos",
-  "contact": "Contacto"
+  "contact": "Contacto",
+  
+  "labels": {
+    "viewArchitecture": "Ver Arquitectura",
+    "technicalSource": "Diagrama técnico extraído de la documentación oficial del proyecto.",
+    "authorNote": "Nota de la autora:",
+    "noteInfinite": "Este proyecto fue desarrollado bajo arquitectura MVC, priorizando la integridad de datos y la escalabilidad.",
+    "noteBooky": "Este proyecto fue desarrollado bajo arquitectura nativa con Firebase, enfocándose en la persistencia y sincronización en tiempo real.",
+    "challenge": "El Reto",
+    "architecture": "Arquitectura",
+    "security": "Seguridad",
+    "database": "Base de Datos",
+    "functionality": "Funcionalidad",
+    "stack": "Stack Técnico",
+    "uxui": "UX/UI",
+    "roles": "Gestión de Roles"
+  },
+  
+  "projects": {
+    "infinite": {
+      "description": "Gestión integral para centros de estética. Control de citas, stock y usuarios con arquitectura robusta.",
+      "challenge": "Digitalizar una agenda física compleja para eliminar solapamientos de citas y centralizar la gestión de servicios.",
+      "architecture": "Desarrollo basado en el patrón Modelo-Vista-Controlador (MVC) para garantizar la escalabilidad y el mantenimiento limpio del código.",
+      "security": "Implementación de rutas amigables mediante .htaccess, encriptación de datos sensibles y validación asíncrona de sesiones.",
+      "database": "Diseño relacional normalizado (MySQL) con disparadores automáticos para el control de inventario tras cada servicio."
+    },
+    "bookyBloom": {
+      "description": "Biblioteca digital interactiva con Kotlin. Gestión de catálogo PDF y comunidad de lectores en tiempo real.",
+      "functionality": "Motor de visualización de libros en PDF con capacidades de descarga para lectura offline.",
+      "stackInfo": "Integración completa con Firebase: Realtime Database para interacciones y Storage para el alojamiento de archivos binarios.",
+      "uxui": "Interfaz nativa Android con soporte completo para Modo Oscuro y navegación basada en Material Design.",
+      "roles": "Sistema de permisos diferenciado que separa las herramientas de gestión administrativa del módulo de lectura para usuarios."
+    }
+  },
+  "skills": {
+    "title": "Especialización Técnica",
+    "mainStack": "Ecosistema .NET (Enfoque Profesional)",
+    "mobile": "Desarrollo Móvil",
+    "database": "Datos y Cloud",
+    "other": "Otras Tecnologías (Formación)"
+  },
+  "contact": {
+    "title": "¿Hablamos?",
+    "subtitle": "Actualmente abierta a oportunidades en .NET Core.",
+    "copyEmail": "Copiar Email",
+    "copied": "¡Copiado!",
+    "linkedin": "Conectar en LinkedIn",
+    "github": "Ver Repositorios"
+  }
 }
