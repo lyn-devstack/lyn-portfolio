@@ -19,13 +19,13 @@ const copyToClipboard = () => {
   <section class="contact-section">
     <h2 class="section-title">{{ $t('contact.title') }}</h2>
     <div class="contact-links">
-      <a href="#" target="_blank" class="contact-btn-secondary">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/carolyn-lyn-dev" target="_blank" class="contact-btn-secondary">LinkedIn</a>
       
       <button @click="copyToClipboard" class="contact-btn-primary">
         {{ copied ? $t('contact.copied') : $t('contact.copyEmail') }}
       </button>
       
-      <a href="#" target="_blank" class="contact-btn-secondary">GitHub</a>
+      <a href="https://github.com/lyn-devstack" target="_blank" class="contact-btn-secondary">GitHub</a>
     </div>
   </section>
 </template>
