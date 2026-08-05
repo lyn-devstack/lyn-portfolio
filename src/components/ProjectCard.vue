@@ -7,14 +7,15 @@ const props = defineProps({
   stack: Array,
   details: Object,
   image: String,
-  architectureImg: String // Para el diagrama de la memoria
+  architectureImg: String, // Para el diagrama de la memoria
+  theme: String
 })
 
 const isModalOpen = ref(false)
 </script>
 
 <template>
-  <div class="bg-[#1c1c1e] border border-gray-800 p-6 rounded-[2rem] hover:border-blue-500/50 transition-all duration-500 group flex flex-col h-full">
+  <div :class="[theme === 'creative' ? 'bg-[#a5907b]' : 'bg-[#1c1c1e]', 'border', 'border-gray-800', 'p-6', 'rounded-[2rem]', 'hover:border-blue-500/50', 'transition-all', 'duration-500', 'group', 'flex', 'flex-col', 'h-full']">
     <div class="h-48 bg-black rounded-2xl mb-6 overflow-hidden border border-gray-800">
       <img v-if="image" :src="image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
       <div v-else class="w-full h-full bg-gradient-to-br from-blue-900/20 to-black flex items-center justify-center text-gray-700 text-xs tracking-widest">
@@ -58,8 +59,22 @@ const isModalOpen = ref(false)
                 <div v-for="(info, label) in details" :key="label">
                   <h5 class="text-white text-sm font-bold mb-1 uppercase tracking-wider">{{ label }}</h5>
                   <p class="text-gray-400 text-sm leading-relaxed">{{ info }}</p>
-                </div>
-              </div>
+       <ProjectCard 
+        title="Infinite" 
+        :description="$t('projects.infinite.description')"
+        :stack="['PHP', 'MVC', 'MySQL', 'AJAX']"
+        image="./images/infinite-preview.png"
+        architectureImg="./images/infinite-db.png"
+        :details="{
+          [$t('labels.challenge')]: $t('projects.infinite.challenge'),
+          [$t('labels.architecture')]: $t('projects.infinite.architecture'),
+          [$t('labels.security')]: $t('projects.infinite.security'),
+          [$t('labels.database')]: $t('projects.infinite.database')
+        }"
+        class="styled-card" 
+        :theme="theme"
+      />        </div>
+            </div>
 
               <div class="mt-10 p-6 bg-blue-500/5 rounded-2xl border border-blue-500/10">
                 <p class="text-blue-400 text-xs leading-relaxed">

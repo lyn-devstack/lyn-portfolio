@@ -25,6 +25,7 @@ defineProps({
           [$t('labels.database')]: $t('projects.infinite.database')
         }"
         class="styled-card" 
+        :theme="theme"
       />
 
       <ProjectCard 
@@ -39,7 +40,7 @@ defineProps({
           [$t('labels.uxui')]: $t('projects.bookyBloom.uxui'),
           [$t('labels.roles')]: $t('projects.bookyBloom.roles')
         }"
-        class="styled-card" 
+                 class="styled-card" :theme="theme" 
       />
     </div>
   </section>
