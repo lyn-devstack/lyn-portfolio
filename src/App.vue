@@ -36,7 +36,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
       <nav class="nav-container">
         <div class="nav-left">
           <button @click="toggleTheme" class="theme-toggle">
-            {{ theme === 'pro' ? '🎨 Modo Creativo' : '💼 Modo Profesional' }}
+            {{ theme === 'pro' ? '💫 Nebula' : '🪐 Deep Space' }}
           </button>
         </div>
 
