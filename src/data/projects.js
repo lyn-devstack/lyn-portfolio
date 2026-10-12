@@ -22,7 +22,7 @@ export const projects = [
     id: 'bookyBloom',
     title: 'Booky Bloom',
     stack: ['Kotlin', 'Firebase', 'Material Design'],
-    image: './images/booky-preview.png',
+    image: './images/booky-cover.jpg',
     architectureImg: './images/booky-diagram.png',
     details: [
       ['functionality', 'functionality'],
@@ -37,7 +37,7 @@ export const projects = [
     id: 'matchaTest',
     title: 'matchaTest',
     stack: ['Vue 3', 'TypeScript', 'Tailwind', 'IndexedDB'],
-    image: './images/matchatest-preview.png',
+    image: './images/matchatest-cover.jpg',
     architectureImg: null,
     details: [
       ['challenge', 'challenge'],

@@ -24,8 +24,7 @@ defineProps({
 
 <style scoped>
 .projects-section {
-  scroll-margin-top: 2rem;
-  padding: 8rem 5%;
+  padding: 5rem 5%;
   max-width: 1300px;
   margin: 0 auto;
   position: relative;

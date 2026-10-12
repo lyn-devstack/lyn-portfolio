@@ -14,7 +14,7 @@ const other = ['Kotlin / Android', 'WordPress', 'Three.js']
 </script>
 
 <template>
-  <section class="skills-section" :class="theme">
+  <section id="skills" class="skills-section" :class="theme">
     <h2 class="section-title">{{ $t('skills.title') }}</h2>
 
     <div class="skills-grid">
@@ -38,7 +38,7 @@ const other = ['Kotlin / Android', 'WordPress', 'Three.js']
 
 <style scoped>
 .skills-section {
-  padding: 4rem 5% 8rem;
+  padding: 3rem 5% 5rem;
   max-width: 1300px;
   margin: 0 auto;
   position: relative;

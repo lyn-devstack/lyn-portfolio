@@ -133,5 +133,16 @@
     "languages": "Spanish (native) · English (upper-intermediate)",
     "certsTitle": "Certifications",
     "certs": "SOLID Principles & Clean Code (Udemy) · Cybersecurity (Cisco)"
+  },
+  "nav": {
+    "label": "Sections",
+    "experience": "Journey",
+    "projects": "Projects",
+    "skills": "Stack",
+    "contact": "Contact",
+    "lightTheme": "Switch to light theme",
+    "darkTheme": "Switch to dark theme",
+    "language": "Language",
+    "menu": "Menu"
   }
 }

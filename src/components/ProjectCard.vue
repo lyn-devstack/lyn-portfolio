@@ -17,6 +17,7 @@ const details = computed(() =>
 )
 const note = computed(() => (te(textKey('note')) ? t(textKey('note')) : null))
 const modalTitleId = computed(() => `modal-title-${props.project.id}`)
+const actionCount = computed(() => 1 + [props.project.repo, props.project.demo, props.project.video].filter(Boolean).length)
 
 const onKeydown = (e) => {
   if (e.key === 'Escape') isModalOpen.value = isVideoOpen.value = false
@@ -57,7 +58,8 @@ onUnmounted(() => {
     <h3 class="card-title text-2xl font-medium mb-2">{{ project.title }}</h3>
     <p class="card-text text-sm mb-8 leading-relaxed flex-grow">{{ t(textKey('description')) }}</p>
 
-    <div class="flex flex-wrap gap-3">
+    <!-- Con más de dos acciones, el botón principal ocupa su propia fila -->
+    <div :class="['actions flex flex-wrap gap-3', { many: actionCount > 2 }]">
       <button @click="isModalOpen = true" class="btn-primary flex-1 py-3 px-4 text-sm font-bold rounded-xl">
         {{ project.architectureImg ? t('labels.viewArchitecture') : t('labels.viewDetails') }}
       </button>
@@ -152,11 +154,17 @@ onUnmounted(() => {
 }
 
 .btn-primary, .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 .btn-primary { background: var(--btn-bg); color: var(--btn-text); }
+.actions.many .btn-primary { flex-basis: 100%; }
+.actions.many .btn-secondary { flex: 1; }
 .btn-primary:hover { background: var(--accent-color); color: #fff; }
 .btn-secondary { background: transparent; color: var(--card-title); border: 1px solid var(--surface-border); }
 .btn-secondary:hover { border-color: var(--accent-color); color: var(--accent-color); }

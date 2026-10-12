@@ -50,8 +50,7 @@ const { tm, rt } = useI18n()
 
 <style scoped>
 .experience-section {
-  scroll-margin-top: 2rem;
-  padding: 8rem 5%;
+  padding: 6rem 5%;
   max-width: 1300px;
   margin: 0 auto;
   position: relative;

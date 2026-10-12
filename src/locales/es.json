@@ -133,5 +133,16 @@
     "languages": "Español (nativo) · Inglés (intermedio-avanzado)",
     "certsTitle": "Certificaciones",
     "certs": "Principios SOLID y Código Limpio (Udemy) · Ciberseguridad (Cisco)"
+  },
+  "nav": {
+    "label": "Secciones",
+    "experience": "Trayectoria",
+    "projects": "Proyectos",
+    "skills": "Stack",
+    "contact": "Contacto",
+    "lightTheme": "Cambiar a tema claro",
+    "darkTheme": "Cambiar a tema oscuro",
+    "language": "Idioma",
+    "menu": "Menú"
   }
 }

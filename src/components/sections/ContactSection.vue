@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="contact-section" :class="theme">
+  <section id="contact" class="contact-section" :class="theme">
     <h2 class="section-title">{{ $t('contact.title') }}</h2>
     <p class="section-subtitle">{{ $t('contact.subtitle') }}</p>
     <div class="contact-links">
@@ -22,7 +22,7 @@ defineProps({
 
 <style scoped>
 .contact-section {
-  padding: 10rem 5%;
+  padding: 5rem 5% 3rem;
   text-align: center;
   position: relative;
   z-index: 10;
@@ -43,7 +43,7 @@ defineProps({
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 4rem 0;
+  padding: 2.5rem 0 0;
   flex-wrap: wrap;
 }
 
