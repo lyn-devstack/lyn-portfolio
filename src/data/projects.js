@@ -19,21 +19,6 @@ export const projects = [
     video: './videos/lumiere-demo.mp4'
   },
   {
-    id: 'bookyBloom',
-    title: 'Booky Bloom',
-    stack: ['Kotlin', 'Firebase', 'Material Design'],
-    image: './images/booky-cover.jpg',
-    architectureImg: './images/booky-diagram.png',
-    details: [
-      ['functionality', 'functionality'],
-      ['stack', 'stackInfo'],
-      ['uxui', 'uxui'],
-      ['roles', 'roles']
-    ],
-    repo: 'https://github.com/lyn-devstack/BookyBloom',
-    demo: null
-  },
-  {
     id: 'matchaTest',
     title: 'matchaTest',
     stack: ['Vue 3', 'TypeScript', 'Tailwind', 'IndexedDB'],
@@ -47,5 +32,20 @@ export const projects = [
     ],
     repo: 'https://github.com/lyn-devstack/matchaTest',
     demo: 'https://lyn-devstack.github.io/matchaTest/'
+  },
+  {
+    id: 'bookyBloom',
+    title: 'Booky Bloom',
+    stack: ['Kotlin', 'Firebase', 'Material Design'],
+    image: './images/booky-cover.jpg',
+    architectureImg: './images/booky-diagram.png',
+    details: [
+      ['functionality', 'functionality'],
+      ['stack', 'stackInfo'],
+      ['uxui', 'uxui'],
+      ['roles', 'roles']
+    ],
+    repo: 'https://github.com/lyn-devstack/BookyBloom',
+    demo: null
   }
 ]

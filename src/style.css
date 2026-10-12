@@ -3,54 +3,63 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #0a0f1e;
+  background-color: #0b0d1a;
   color: white;
   width: 100%;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Títulos y marca con Space Grotesk; el texto corrido con Inter */
+h1, h2, h3, h4, .brand {
+  font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
+  letter-spacing: -0.02em;
 }
 
 /* VARIABLES DE TEMA
    Son globales (no scoped) porque el modal de proyectos se teletransporta a <body>
    y queda fuera de <main>; por eso también lleva la clase del tema. */
 .pro {
-  --accent-color: #4facfe;
+  --accent-color: #8b7cff;
+  --accent-rgb: 139, 124, 255;
   --text-color: #ffffff;
-  --text-muted: #9ca3af;
-  --surface: #1c1c1e;
-  --surface-border: #2c2c30;
-  --media-bg: #000000;
+  --text-muted: #a3a8c3;
+  --surface: #15172a;
+  --surface-border: #262a42;
+  --media-bg: #07080f;
   --card-title: #ffffff;
-  --accent-soft: rgba(79, 172, 254, 0.1);
-  --accent-soft-border: rgba(79, 172, 254, 0.3);
+  --accent-soft: rgba(139, 124, 255, 0.12);
+  --accent-soft-border: rgba(139, 124, 255, 0.32);
   --btn-bg: #ffffff;
-  --btn-text: #000000;
+  --btn-text: #0b0d1a;
   --card-shadow: none;
-  --card-shadow-hover: 0 25px 50px -12px rgba(79, 172, 254, 0.1);
-  --backdrop: rgba(0, 0, 0, 0.8);
-  --nav-bg: rgba(10, 15, 30, 0.78);
-  --nav-solid: #0a0f1e;
+  --card-shadow-hover: 0 25px 50px -12px rgba(139, 124, 255, 0.18);
+  --backdrop: rgba(5, 6, 14, 0.8);
+  --nav-bg: rgba(11, 13, 26, 0.78);
+  --nav-solid: #0b0d1a;
   --control-bg: rgba(255, 255, 255, 0.08);
   --control-border: rgba(255, 255, 255, 0.16);
 }
 
 .creative {
-  --accent-color: #ff4081;
-  --text-color: #2b1f2d;
-  --text-muted: #4a384c;
-  --surface: #f8eef2;
-  --surface-border: rgba(255, 64, 129, 0.2);
-  --media-bg: #fcf2f6;
-  --card-title: #d81b60;
-  --accent-soft: rgba(255, 64, 129, 0.1);
-  --accent-soft-border: rgba(255, 64, 129, 0.3);
-  --btn-bg: #ff4081;
+  --accent-color: #e8505b;
+  --accent-rgb: 232, 80, 91;
+  --text-color: #2a2024;
+  --text-muted: #5a4d52;
+  --surface: #fff3ee;
+  --surface-border: rgba(232, 80, 91, 0.2);
+  --media-bg: #fff8f5;
+  --card-title: #c23848;
+  --accent-soft: rgba(232, 80, 91, 0.1);
+  --accent-soft-border: rgba(232, 80, 91, 0.3);
+  --btn-bg: #e8505b;
   --btn-text: #ffffff;
-  --card-shadow: 0 10px 30px rgba(255, 64, 129, 0.12);
-  --card-shadow-hover: 0 15px 40px rgba(255, 64, 129, 0.25);
-  --backdrop: rgba(43, 31, 45, 0.5);
-  --nav-bg: rgba(253, 250, 246, 0.85);
-  --nav-solid: #fdfaf6;
+  --card-shadow: 0 10px 30px rgba(232, 80, 91, 0.1);
+  --card-shadow-hover: 0 15px 40px rgba(232, 80, 91, 0.22);
+  --backdrop: rgba(42, 32, 36, 0.5);
+  --nav-bg: rgba(250, 247, 242, 0.85);
+  --nav-solid: #faf7f2;
   --control-bg: rgba(255, 255, 255, 0.7);
-  --control-border: rgba(43, 31, 45, 0.15);
+  --control-border: rgba(42, 32, 36, 0.15);
 }
 
 html { scroll-behavior: smooth; }

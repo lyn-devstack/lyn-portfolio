@@ -54,7 +54,7 @@ const cvUrl = computed(() => `${import.meta.env.BASE_URL}cv/CV_Leslie_Carolyn_${
 
 .hero-title { 
   font-size: clamp(3rem, 12vw, 8.5rem); 
-  font-weight: 900; 
+  font-weight: 700; 
   line-height: 0.85; 
   margin: 0; 
 }

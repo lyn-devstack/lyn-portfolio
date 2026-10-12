@@ -30,7 +30,7 @@ defineProps({
 
 .section-title {
   font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
@@ -69,42 +69,23 @@ defineProps({
   overflow: hidden;
 }
 
-/* --- ADAPTACIÓN POR TEMAS (PRO) --- */
-.contact-section.pro .contact-btn-primary {
-  background: rgba(79, 172, 254, 0.15);
-  color: #4facfe;
-  border: 1px solid rgba(79, 172, 254, 0.3);
+/* Colores desde las variables del tema (style.css) */
+.contact-btn-primary {
+  background: var(--accent-soft);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-soft-border);
 }
 
-.contact-section.pro .contact-btn-secondary {
-  background: rgba(255, 255, 255, 0.05);
-  color: white;
+.contact-btn-secondary {
+  background: var(--control-bg);
+  color: var(--text-color);
+  border: 1px solid var(--control-border);
 }
 
-.contact-section.pro .contact-btn-primary:hover, 
-.contact-section.pro .contact-btn-secondary:hover {
-  background: rgba(79, 172, 254, 0.3);
+.contact-btn-primary:hover,
+.contact-btn-secondary:hover {
+  background: rgba(var(--accent-rgb), 0.22);
   transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(79, 172, 254, 0.3);
-}
-
-/* --- ADAPTACIÓN POR TEMAS (CREATIVE) --- */
-.contact-section.creative .contact-btn-primary {
-  background: rgba(255, 64, 129, 0.1);
-  color: #ff4081;
-  border: 1px solid rgba(255, 64, 129, 0.2);
-}
-
-.contact-section.creative .contact-btn-secondary {
-  background: rgba(255, 255, 255, 0.4);
-  color: #2d2d2d;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.contact-section.creative .contact-btn-primary:hover, 
-.contact-section.creative .contact-btn-secondary:hover {
-  background: rgba(255, 64, 129, 0.2);
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(255, 64, 129, 0.2);
+  box-shadow: 0 12px 40px rgba(var(--accent-rgb), 0.25);
 }
 </style>

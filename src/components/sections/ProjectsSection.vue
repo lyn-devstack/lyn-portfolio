@@ -33,7 +33,7 @@ defineProps({
 
 .section-title {
   font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 900;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 4rem;
   color: var(--text-color);

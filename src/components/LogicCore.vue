@@ -55,7 +55,7 @@ onMounted(() => {
 
   geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
   const material = new THREE.PointsMaterial({ 
-    color: props.theme === 'pro' ? 0x4facfe : 0xff4081, 
+    color: props.theme === 'pro' ? 0x8b7cff : 0xe8505b, 
     size: 0.06,
     transparent: true,
     opacity: 0.6
@@ -101,7 +101,7 @@ onMounted(() => {
 
 watch(() => props.theme, (newVal) => {
   if (particles) {
-    particles.material.color.set(newVal === 'pro' ? 0x4facfe : 0xff4081)
+    particles.material.color.set(newVal === 'pro' ? 0x8b7cff : 0xe8505b)
   }
 })
 

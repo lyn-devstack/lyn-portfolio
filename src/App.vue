@@ -143,7 +143,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 }
 
 .brand {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.15rem;
   color: var(--text-color);
   text-decoration: none;
@@ -235,8 +235,8 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 }
 
 /* COLORES GLOBALES POR TEMA */
-.pro { background-color: #0a0f1e; color: white; }
-.creative { background-color: #fdfaf6; color: #2d2d2d; }
+.pro { background-color: #0b0d1a; color: white; }
+.creative { background-color: #faf7f2; color: #2a2024; }
 
 .footer { padding: 3rem 5%; text-align: center; opacity: 0.5; font-weight: 800; color: var(--text-color); }
 </style>
