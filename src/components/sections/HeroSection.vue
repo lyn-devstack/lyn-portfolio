@@ -167,6 +167,20 @@ const cvUrl = computed(() => `${import.meta.env.BASE_URL}cv/CV_Leslie_Carolyn_${
   100% { opacity: 0; transform: translateX(-50%) translateY(15px); }
 }
 
+/* Las partículas dibujan el avatar a la derecha (escritorio) o arriba (móvil):
+   el texto se aparta para dejarle sitio. Mismo corte que MOBILE_BREAKPOINT en LogicCore.vue */
+@media (min-width: 901px) {
+  .hero-full { justify-content: flex-start; text-align: left; }
+  .hero-content { max-width: 52%; }
+  .hero-title { font-size: clamp(3rem, 6.4vw, 6.5rem); }
+  .hero-desc { margin-left: 0; margin-right: 0; }
+  .hero-actions { justify-content: flex-start; }
+}
+
+@media (max-width: 900px) {
+  .hero-full { align-items: flex-start; padding-top: calc(4rem + 40vh); }
+}
+
 /* En pantallas bajas o móviles taparía los botones */
 @media (max-height: 820px), (max-width: 640px) {
   .scroll-indicator { display: none; }

@@ -47,6 +47,21 @@ defineProps({
   flex-wrap: wrap;
 }
 
+/* En escritorio el texto va a la izquierda y las partículas forman un sobre a la derecha */
+@media (min-width: 901px) {
+  .contact-section {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .contact-section > * { max-width: 50%; }
+  .contact-links { justify-content: flex-start; }
+}
+
 /* Estilo Base del Botón Espejo */
 .contact-btn-primary, .contact-btn-secondary {
   padding: 1.2rem 2.5rem;

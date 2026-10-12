@@ -235,8 +235,10 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 }
 
 /* COLORES GLOBALES POR TEMA */
-.pro { background-color: #0b0d1a; color: white; }
-.creative { background-color: #faf7f2; color: #2a2024; }
+/* Solo el contenedor principal: las secciones también llevan la clase del tema
+   y, con estilos scoped, heredarían este fondo opaco tapando las partículas */
+.main-container.pro { background-color: #0b0d1a; color: white; }
+.main-container.creative { background-color: #faf7f2; color: #2a2024; }
 
 .footer { padding: 3rem 5%; text-align: center; opacity: 0.5; font-weight: 800; color: var(--text-color); }
 </style>
