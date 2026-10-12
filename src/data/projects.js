@@ -4,7 +4,7 @@ export const projects = [
   {
     id: 'infinite',
     title: 'Infinite',
-    stack: ['PHP', 'MVC', 'MySQL', 'AJAX'],
+    stack: ['PHP', 'MVC', 'MySQL', 'AJAX', 'Docker'],
     image: './images/infinite-preview.png',
     architectureImg: './images/infinite-db.png',
     details: [
@@ -13,7 +13,7 @@ export const projects = [
       ['security', 'security'],
       ['database', 'database']
     ],
-    repo: null,
+    repo: 'https://github.com/lyn-devstack/infinite-beauty-center',
     demo: null
   },
   {

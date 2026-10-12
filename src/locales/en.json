@@ -32,9 +32,9 @@
       "description": "All-in-one management system for beauty centers. Robust appointment, stock, and user control.",
       "challenge": "Digitalizing a complex physical scheduling system to eliminate booking conflicts and centralize service management.",
       "architecture": "Development based on the Model-View-Controller (MVC) pattern to ensure scalability and clean code maintenance.",
-      "security": "Implementation of SEO-friendly routes via .htaccess, sensitive data encryption, and asynchronous session validation.",
+      "security": "Friendly URLs via .htaccess, passwords hashed with password_hash, session-protected admin endpoints and XSS-safe output.",
       "database": "Normalized relational schema (MySQL) featuring automated triggers for real-time inventory updates after each service.",
-      "note": "This project was developed under MVC architecture, prioritizing data integrity and scalability."
+      "note": "Final project of my DAW degree (2022), framework-free MVC architecture. Revised in 2026: security hardening, PHP 8 compatibility and a Docker setup."
     },
     "bookyBloom": {
       "description": "Interactive digital library built with Kotlin. PDF catalog management and real-time reader community.",

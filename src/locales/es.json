@@ -32,9 +32,9 @@
       "description": "Gestión integral para centros de estética. Control de citas, stock y usuarios con arquitectura robusta.",
       "challenge": "Digitalizar una agenda física compleja para eliminar solapamientos de citas y centralizar la gestión de servicios.",
       "architecture": "Desarrollo basado en el patrón Modelo-Vista-Controlador (MVC) para garantizar la escalabilidad y el mantenimiento limpio del código.",
-      "security": "Implementación de rutas amigables mediante .htaccess, encriptación de datos sensibles y validación asíncrona de sesiones.",
+      "security": "Rutas amigables con .htaccess, contraseñas con password_hash, endpoints de administración protegidos por sesión y salida escapada contra XSS.",
       "database": "Diseño relacional normalizado (MySQL) con disparadores automáticos para el control de inventario tras cada servicio.",
-      "note": "Este proyecto fue desarrollado bajo arquitectura MVC, priorizando la integridad de datos y la escalabilidad."
+      "note": "Proyecto final de DAW (2022), arquitectura MVC sin framework. En 2026 lo revisé: seguridad, compatibilidad con PHP 8 y entorno Docker."
     },
     "bookyBloom": {
       "description": "Biblioteca digital interactiva con Kotlin. Gestión de catálogo PDF y comunidad de lectores en tiempo real.",
