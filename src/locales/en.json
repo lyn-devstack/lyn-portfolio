@@ -1,16 +1,15 @@
 {
-  "welcome": "Welcome",
   "role": "Software Developer",
-  "description": "Full-stack developer specializing in scalable architectures and clean code, with a focus on the .NET ecosystem and modern front-end technologies.",
-  "viewProjects": "View Projects",
-  "contact": "Contact",
-
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Open to full-stack web developer roles, remote. Authorized to work in Spain (EU) and the US.",
+    "linkedin": "Connect on LinkedIn",
+    "github": "View Repositories"
+  },
   "labels": {
     "viewArchitecture": "View Architecture",
     "technicalSource": "Technical diagram extracted from the project's official documentation.",
     "authorNote": "Author's Note:",
-    "noteInfinite": "This project was developed under MVC architecture, prioritizing data integrity and scalability.",
-    "noteBooky": "This project was developed under native architecture with Firebase, focusing on persistence and real-time synchronization.",
     "challenge": "The Challenge",
     "architecture": "Architecture",
     "security": "Security",
@@ -18,38 +17,119 @@
     "functionality": "Functionality",
     "stack": "Tech Stack",
     "uxui": "UX/UI",
-    "roles": "Role Management"
+    "roles": "Role Management",
+    "viewDetails": "View Details",
+    "code": "Code",
+    "demo": "Demo",
+    "close": "Close",
+    "blueprint": "Technical Blueprint",
+    "inside": "Inside",
+    "previewAlt": "{title} screenshot",
+    "diagramAlt": "{title} technical diagram"
   },
-  
   "projects": {
     "infinite": {
       "description": "All-in-one management system for beauty centers. Robust appointment, stock, and user control.",
       "challenge": "Digitalizing a complex physical scheduling system to eliminate booking conflicts and centralize service management.",
       "architecture": "Development based on the Model-View-Controller (MVC) pattern to ensure scalability and clean code maintenance.",
       "security": "Implementation of SEO-friendly routes via .htaccess, sensitive data encryption, and asynchronous session validation.",
-      "database": "Normalized relational schema (MySQL) featuring automated triggers for real-time inventory updates after each service."
+      "database": "Normalized relational schema (MySQL) featuring automated triggers for real-time inventory updates after each service.",
+      "note": "This project was developed under MVC architecture, prioritizing data integrity and scalability."
     },
     "bookyBloom": {
       "description": "Interactive digital library built with Kotlin. PDF catalog management and real-time reader community.",
       "functionality": "PDF rendering engine with integrated download capabilities for seamless offline reading.",
       "stackInfo": "Full Firebase integration: Realtime Database for user interaction and Storage for binary file hosting.",
       "uxui": "Native Android interface with full Dark Mode support and Material Design-based navigation.",
-      "roles": "Differentiated permission system separating administrative management tools from the end-user reading module."
+      "roles": "Differentiated permission system separating administrative management tools from the end-user reading module.",
+      "note": "This project was developed under native architecture with Firebase, focusing on persistence and real-time synchronization."
+    },
+    "matchaTest": {
+      "description": "Multiple-choice exam simulator for university students. No accounts, no server: everything is stored in the browser.",
+      "challenge": "Practising with each course's real exam rules (wrong-answer penalties, pass mark, time limit), which change from one syllabus to another.",
+      "functionality": "Configurable scoring engine, a syllabus reader (PDF/TXT) that detects penalties and duration, Mock Exam, Practice and Review Deck (Leitner system) modes, and progress statistics.",
+      "architecture": "Local-first app built with Vue 3 and TypeScript: question banks, history and review deck persist in IndexedDB. Import from JSON or Markdown, plus exportable backups.",
+      "uxui": "Keyboard shortcuts during exams, sessions that survive page reloads, and a clean, distraction-free design for studying.",
+      "note": "My own idea and design, born from my needs as a university student."
     }
   },
   "skills": {
-    "title": "Technical Specialization",
-    "mainStack": ".NET Ecosystem (Professional Focus)",
-    "mobile": "Mobile Development",
-    "database": "Data & Cloud",
-    "other": "Other Technologies (Academics)"
+    "title": "Tech Stack",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "data": "Data",
+    "tools": "Tools & Methodology",
+    "other": "Also worked with",
+    "items": {
+      "microservices": "Microservices",
+      "restApis": "REST APIs"
+    }
   },
-  "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Currently open to .NET Core opportunities.",
-    "copyEmail": "Copy Email",
-    "copied": "Copied!",
-    "linkedin": "Connect on LinkedIn",
-    "github": "View Repositories"
+  "sections": {
+    "projects": "Projects",
+    "explore": "Explore",
+    "experience": "Journey"
+  },
+  "hero": {
+    "eyebrow": "DevStack",
+    "role": "Full-Stack Web Developer",
+    "stack": "Vue · TypeScript · PHP · .NET",
+    "description": "I build web applications end to end: interfaces with Vue and TypeScript, and server-side logic with PHP and .NET. I currently develop and maintain Avantio's booking software and websites.",
+    "location": "Spain · Remote",
+    "ctaProjects": "View projects",
+    "ctaCv": "Download CV"
+  },
+  "experience": {
+    "title": "Journey",
+    "jobsTitle": "Experience",
+    "jobs": [
+      {
+        "role": "Web Developer",
+        "company": "Avantio",
+        "period": "Mar 2025 – Present",
+        "summary": "Maintenance, evolution and deployment of the company's booking management software and websites.",
+        "bullets": [
+          "Built interactive widgets and components from scratch with JavaScript, SCSS and PHP to extend the core product.",
+          "Restructured complex websites and booking flows using a component-based architecture and PHP templates.",
+          "Integrated sales, payment gateway and long-stay brokers together with the Systems team.",
+          "Local environments with Node.js and Gulp. Pull Requests and cross code reviews on GitHub, tracked in Jira."
+        ]
+      },
+      {
+        "role": "Full Stack Developer (Internship)",
+        "company": "Kiteris Solutions",
+        "period": "Sep 2022 – Jan 2023",
+        "summary": "Enterprise resource management platform built on a microservices architecture.",
+        "bullets": [
+          "Microservices with .NET and C#.",
+          "Migrated legacy interfaces to a modular SPA with Vue.js, Pinia and TypeScript.",
+          "Authentication, advanced data filters, Swagger-documented API integration and PDF report export.",
+          "Scrum: daily stand-ups, sprint planning and task estimation."
+        ]
+      }
+    ],
+    "educationTitle": "Education",
+    "education": [
+      {
+        "title": "Bachelor's Degree in Information Technology Engineering",
+        "detail": "UNED · 2026 – Present"
+      },
+      {
+        "title": "Higher Technical Degree in Multiplatform App Development (DAM)",
+        "detail": "Ilerna · 2024 – 2025 · GPA 9.14/10"
+      },
+      {
+        "title": "Higher Technical Degree in Web App Development (DAW)",
+        "detail": "Ilerna · 2020 – 2023"
+      },
+      {
+        "title": "Criminal Justice (1 year completed)",
+        "detail": "ASA College, New York · 2016 – 2017"
+      }
+    ],
+    "languagesTitle": "Languages",
+    "languages": "Spanish (native) · English (upper-intermediate)",
+    "certsTitle": "Certifications",
+    "certs": "SOLID Principles & Clean Code (Udemy) · Cybersecurity (Cisco)"
   }
 }

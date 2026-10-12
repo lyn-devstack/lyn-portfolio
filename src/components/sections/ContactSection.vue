@@ -1,31 +1,21 @@
 <script setup>
-import { ref } from 'vue'
-
 defineProps({
   theme: String
 })
-
-const email = "tu.email@ejemplo.com"
-const copied = ref(false)
-
-const copyToClipboard = () => {
-  navigator.clipboard.writeText(email)
-  copied.value = true
-  setTimeout(() => copied.value = false, 2000)
-}
 </script>
 
 <template>
-  <section class="contact-section">
+  <section class="contact-section" :class="theme">
     <h2 class="section-title">{{ $t('contact.title') }}</h2>
+    <p class="section-subtitle">{{ $t('contact.subtitle') }}</p>
     <div class="contact-links">
-      <a href="https://www.linkedin.com/in/carolyn-lyn-dev" target="_blank" class="contact-btn-secondary">LinkedIn</a>
-      
-      <button @click="copyToClipboard" class="contact-btn-primary">
-        {{ copied ? $t('contact.copied') : $t('contact.copyEmail') }}
-      </button>
-      
-      <a href="https://github.com/lyn-devstack" target="_blank" class="contact-btn-secondary">GitHub</a>
+      <a href="https://www.linkedin.com/in/carolyn-lyn-dev" target="_blank" rel="noopener noreferrer" class="contact-btn-primary">
+        {{ $t('contact.linkedin') }}
+      </a>
+
+      <a href="https://github.com/lyn-devstack" target="_blank" rel="noopener noreferrer" class="contact-btn-secondary">
+        {{ $t('contact.github') }}
+      </a>
     </div>
   </section>
 </template>
@@ -41,7 +31,12 @@ const copyToClipboard = () => {
 .section-title {
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 900;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  opacity: 0.8;
 }
 
 .contact-links {
@@ -75,39 +70,39 @@ const copyToClipboard = () => {
 }
 
 /* --- ADAPTACIÓN POR TEMAS (PRO) --- */
-:deep(.pro) .contact-btn-primary {
+.contact-section.pro .contact-btn-primary {
   background: rgba(79, 172, 254, 0.15);
   color: #4facfe;
   border: 1px solid rgba(79, 172, 254, 0.3);
 }
 
-:deep(.pro) .contact-btn-secondary {
+.contact-section.pro .contact-btn-secondary {
   background: rgba(255, 255, 255, 0.05);
   color: white;
 }
 
-:deep(.pro) .contact-btn-primary:hover, 
-:deep(.pro) .contact-btn-secondary:hover {
+.contact-section.pro .contact-btn-primary:hover, 
+.contact-section.pro .contact-btn-secondary:hover {
   background: rgba(79, 172, 254, 0.3);
   transform: translateY(-5px);
   box-shadow: 0 12px 40px rgba(79, 172, 254, 0.3);
 }
 
 /* --- ADAPTACIÓN POR TEMAS (CREATIVE) --- */
-:deep(.creative) .contact-btn-primary {
+.contact-section.creative .contact-btn-primary {
   background: rgba(255, 64, 129, 0.1);
   color: #ff4081;
   border: 1px solid rgba(255, 64, 129, 0.2);
 }
 
-:deep(.creative) .contact-btn-secondary {
+.contact-section.creative .contact-btn-secondary {
   background: rgba(255, 255, 255, 0.4);
   color: #2d2d2d;
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-:deep(.creative) .contact-btn-primary:hover, 
-:deep(.creative) .contact-btn-secondary:hover {
+.contact-section.creative .contact-btn-primary:hover, 
+.contact-section.creative .contact-btn-secondary:hover {
   background: rgba(255, 64, 129, 0.2);
   transform: translateY(-5px);
   box-shadow: 0 12px 40px rgba(255, 64, 129, 0.2);

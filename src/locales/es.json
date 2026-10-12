@@ -1,16 +1,15 @@
 {
-  "welcome": "Bienvenida",
   "role": "Desarrolladora de Software",
-  "description": "Desarrolladora Fullstack especializada en arquitecturas escalables y código limpio, con enfoque en el ecosistema .NET y tecnologías modernas de frontend.",
-  "viewProjects": "Ver Proyectos",
-  "contact": "Contacto",
-  
+  "contact": {
+    "title": "¿Hablamos?",
+    "subtitle": "Abierta a oportunidades como desarrolladora web full-stack, en remoto. Con permiso de trabajo en España y EE. UU.",
+    "linkedin": "Conectar en LinkedIn",
+    "github": "Ver Repositorios"
+  },
   "labels": {
     "viewArchitecture": "Ver Arquitectura",
     "technicalSource": "Diagrama técnico extraído de la documentación oficial del proyecto.",
     "authorNote": "Nota de la autora:",
-    "noteInfinite": "Este proyecto fue desarrollado bajo arquitectura MVC, priorizando la integridad de datos y la escalabilidad.",
-    "noteBooky": "Este proyecto fue desarrollado bajo arquitectura nativa con Firebase, enfocándose en la persistencia y sincronización en tiempo real.",
     "challenge": "El Reto",
     "architecture": "Arquitectura",
     "security": "Seguridad",
@@ -18,38 +17,119 @@
     "functionality": "Funcionalidad",
     "stack": "Stack Técnico",
     "uxui": "UX/UI",
-    "roles": "Gestión de Roles"
+    "roles": "Gestión de Roles",
+    "viewDetails": "Ver detalles",
+    "code": "Código",
+    "demo": "Demo",
+    "close": "Cerrar",
+    "blueprint": "Plano técnico",
+    "inside": "por dentro",
+    "previewAlt": "Captura de {title}",
+    "diagramAlt": "Diagrama técnico de {title}"
   },
-  
   "projects": {
     "infinite": {
       "description": "Gestión integral para centros de estética. Control de citas, stock y usuarios con arquitectura robusta.",
       "challenge": "Digitalizar una agenda física compleja para eliminar solapamientos de citas y centralizar la gestión de servicios.",
       "architecture": "Desarrollo basado en el patrón Modelo-Vista-Controlador (MVC) para garantizar la escalabilidad y el mantenimiento limpio del código.",
       "security": "Implementación de rutas amigables mediante .htaccess, encriptación de datos sensibles y validación asíncrona de sesiones.",
-      "database": "Diseño relacional normalizado (MySQL) con disparadores automáticos para el control de inventario tras cada servicio."
+      "database": "Diseño relacional normalizado (MySQL) con disparadores automáticos para el control de inventario tras cada servicio.",
+      "note": "Este proyecto fue desarrollado bajo arquitectura MVC, priorizando la integridad de datos y la escalabilidad."
     },
     "bookyBloom": {
       "description": "Biblioteca digital interactiva con Kotlin. Gestión de catálogo PDF y comunidad de lectores en tiempo real.",
       "functionality": "Motor de visualización de libros en PDF con capacidades de descarga para lectura offline.",
       "stackInfo": "Integración completa con Firebase: Realtime Database para interacciones y Storage para el alojamiento de archivos binarios.",
       "uxui": "Interfaz nativa Android con soporte completo para Modo Oscuro y navegación basada en Material Design.",
-      "roles": "Sistema de permisos diferenciado que separa las herramientas de gestión administrativa del módulo de lectura para usuarios."
+      "roles": "Sistema de permisos diferenciado que separa las herramientas de gestión administrativa del módulo de lectura para usuarios.",
+      "note": "Este proyecto fue desarrollado bajo arquitectura nativa con Firebase, enfocándose en la persistencia y sincronización en tiempo real."
+    },
+    "matchaTest": {
+      "description": "Simulador de exámenes tipo test para universitarios. Sin cuentas ni servidor: todo se guarda en el navegador.",
+      "challenge": "Practicar con las reglas reales de cada asignatura (penalización por fallo, nota de corte, tiempo límite), que cambian de una guía docente a otra.",
+      "functionality": "Motor de reglas configurable, lector de guías docentes en PDF/TXT que detecta penalización y duración, modos Simulacro, Práctica y Mazo de repaso (sistema Leitner) y estadísticas de evolución.",
+      "architecture": "Aplicación local-first con Vue 3 y TypeScript: bancos de preguntas, historial y repaso se guardan en IndexedDB. Importación desde JSON o Markdown y copia de seguridad exportable.",
+      "uxui": "Atajos de teclado durante el examen, sesión que sobrevive a recargas y un diseño limpio pensado para estudiar sin distracciones.",
+      "note": "Idea y diseño propios, nacidos de mis necesidades como estudiante universitaria."
     }
   },
   "skills": {
-    "title": "Especialización Técnica",
-    "mainStack": "Ecosistema .NET (Enfoque Profesional)",
-    "mobile": "Desarrollo Móvil",
-    "database": "Datos y Cloud",
-    "other": "Otras Tecnologías (Formación)"
+    "title": "Stack técnico",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "data": "Datos",
+    "tools": "Herramientas y metodología",
+    "other": "También he trabajado con",
+    "items": {
+      "microservices": "Microservicios",
+      "restApis": "APIs REST"
+    }
   },
-  "contact": {
-    "title": "¿Hablamos?",
-    "subtitle": "Actualmente abierta a oportunidades en .NET Core.",
-    "copyEmail": "Copiar Email",
-    "copied": "¡Copiado!",
-    "linkedin": "Conectar en LinkedIn",
-    "github": "Ver Repositorios"
+  "sections": {
+    "projects": "Proyectos",
+    "explore": "Explorar",
+    "experience": "Trayectoria"
+  },
+  "hero": {
+    "eyebrow": "DevStack",
+    "role": "Desarrolladora web full-stack",
+    "stack": "Vue · TypeScript · PHP · .NET",
+    "description": "Construyo aplicaciones web de principio a fin: interfaces con Vue y TypeScript, y lógica de servidor con PHP y .NET. Hoy desarrollo y mantengo el software de reservas y los sitios web de Avantio.",
+    "location": "España · Remoto",
+    "ctaProjects": "Ver proyectos",
+    "ctaCv": "Descargar CV"
+  },
+  "experience": {
+    "title": "Trayectoria",
+    "jobsTitle": "Experiencia",
+    "jobs": [
+      {
+        "role": "Web Developer",
+        "company": "Avantio",
+        "period": "Mar 2025 – Actualidad",
+        "summary": "Mantenimiento, evolución y despliegue del software de gestión de reservas y de los sitios web de la compañía.",
+        "bullets": [
+          "Widgets y componentes interactivos desde cero con JavaScript, SCSS y PHP para ampliar el núcleo del producto.",
+          "Reestructuración de sitios y flujos de reserva complejos con arquitectura de componentes y plantillas PHP.",
+          "Integración de brokers de ventas, pasarelas de pago y larga estancia junto al equipo de Sistemas.",
+          "Entornos locales con Node.js y Gulp. Pull Requests y code reviews cruzadas en GitHub, con Jira."
+        ]
+      },
+      {
+        "role": "Full Stack Developer (prácticas)",
+        "company": "Kiteris Solutions",
+        "period": "Sep 2022 – Ene 2023",
+        "summary": "Plataforma de gestión de recursos empresariales con arquitectura de microservicios.",
+        "bullets": [
+          "Microservicios con .NET y C#.",
+          "Migración de interfaces tradicionales a una SPA modular con Vue.js, Pinia y TypeScript.",
+          "Autenticación, filtros avanzados, consumo de APIs documentadas con Swagger y exportación de informes PDF.",
+          "Scrum: dailies, planificación de sprints y estimación de tareas."
+        ]
+      }
+    ],
+    "educationTitle": "Formación",
+    "education": [
+      {
+        "title": "Grado en Ingeniería en Tecnologías de la Información",
+        "detail": "UNED · 2026 – Actualidad"
+      },
+      {
+        "title": "CFGS Desarrollo de Aplicaciones Multiplataforma (DAM)",
+        "detail": "Ilerna · 2024 – 2025 · Nota media 9,14"
+      },
+      {
+        "title": "CFGS Desarrollo de Aplicaciones Web (DAW)",
+        "detail": "Ilerna · 2020 – 2023"
+      },
+      {
+        "title": "Justicia Criminal (1 año cursado)",
+        "detail": "ASA College, Nueva York · 2016 – 2017"
+      }
+    ],
+    "languagesTitle": "Idiomas",
+    "languages": "Español (nativo) · Inglés (intermedio-avanzado)",
+    "certsTitle": "Certificaciones",
+    "certs": "Principios SOLID y Código Limpio (Udemy) · Ciberseguridad (Cisco)"
   }
 }

@@ -8,7 +8,7 @@ const props = defineProps({
 })
 
 const coreCanvas = ref(null)
-let scene, camera, renderer, particles, positions
+let scene, camera, renderer, particles, positions, rafId
 let mouse = new THREE.Vector2(0, 0)
 const SEPARATION = 0.35, AMOUNTX = 60, AMOUNTY = 60
 
@@ -16,6 +16,7 @@ const onWindowResize = () => {
   camera.aspect = window.innerWidth / window.innerHeight
   camera.updateProjectionMatrix()
   renderer.setSize(window.innerWidth, window.innerHeight)
+  if (!rafId) renderer.render(scene, camera)
 }
 
 const onMouseMove = (event) => {
@@ -66,9 +67,12 @@ onMounted(() => {
   window.addEventListener('resize', onWindowResize)
   window.addEventListener('mousemove', onMouseMove)
 
+  // Si el sistema pide reducir movimiento, se dibuja la malla una vez y sin animación
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
   let count = 0
   const animate = () => {
-    requestAnimationFrame(animate)
+    if (!reduceMotion) rafId = requestAnimationFrame(animate)
     
     const posAttr = particles.geometry.attributes.position
     let i = 0
@@ -101,9 +105,18 @@ watch(() => props.theme, (newVal) => {
   }
 })
 
+watch(() => props.theme, () => {
+  // Con movimiento reducido no hay bucle, así que hay que redibujar a mano
+  if (renderer && !rafId) renderer.render(scene, camera)
+})
+
 onUnmounted(() => {
+  cancelAnimationFrame(rafId)
   window.removeEventListener('resize', onWindowResize)
   window.removeEventListener('mousemove', onMouseMove)
+  particles?.geometry.dispose()
+  particles?.material.dispose()
+  renderer?.dispose()
 })
 </script>
 

@@ -1,16 +1,24 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-import LogicCore from './components/LogicCore.vue'
+import { ref, watch, onMounted, onUnmounted, defineAsyncComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+// Three.js es la mayor parte del bundle: se carga aparte para que el contenido aparezca antes
+const LogicCore = defineAsyncComponent(() => import('./components/LogicCore.vue'))
 
 // Importación de Secciones Modularizadas
 import HeroSection from './components/sections/HeroSection.vue'
+import ExperienceSection from './components/sections/ExperienceSection.vue'
 import ProjectsSection from './components/sections/ProjectsSection.vue'
 import SkillsSection from './components/sections/SkillsSection.vue'
 import ContactSection from './components/sections/ContactSection.vue'
 
 // Estado Global
 const scrollProgress = ref(0)
-const theme = ref('pro') 
+const theme = ref('pro')
+const { locale } = useI18n()
+
+// Mantiene <html lang> sincronizado con el idioma elegido (lectores de pantalla, SEO)
+watch(locale, (lang) => { document.documentElement.lang = lang }, { immediate: true })
 
 const toggleTheme = () => {
   theme.value = theme.value === 'pro' ? 'creative' : 'pro'
@@ -50,11 +58,12 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
       </nav>
 
       <HeroSection :theme="theme" />
+      <ExperienceSection :theme="theme" />
       <ProjectsSection :theme="theme" />
       <SkillsSection :theme="theme" />
       <ContactSection :theme="theme" />
 
-      <footer class="footer">&copy; 2026 Carolyn DevStack • {{ $t('role') }}</footer>
+      <footer class="footer">&copy; 2026 Leslie Carolyn · DevStack • {{ $t('role') }}</footer>
     </div>
   </main>
 </template>
@@ -95,8 +104,8 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 }
 
 /* COLORES GLOBALES POR TEMA */
-.pro { background-color: #0a0f1e; color: white; --accent-color: #4facfe; }
-.creative { background-color: #fdfaf6; color: #2d2d2d; --accent-color: #ff4081; }
+.pro { background-color: #0a0f1e; color: white; }
+.creative { background-color: #fdfaf6; color: #2d2d2d; }
 
 .footer { padding: 5rem; text-align: center; opacity: 0.4; font-weight: 800; }
 </style>
