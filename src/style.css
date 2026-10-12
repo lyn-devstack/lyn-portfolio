@@ -36,6 +36,7 @@ h1, h2, h3, h4, .brand {
   --backdrop: rgba(5, 6, 14, 0.8);
   --nav-bg: rgba(11, 13, 26, 0.78);
   --nav-solid: #0b0d1a;
+  --panel-bg: rgba(11, 13, 26, 0.72);
   --control-bg: rgba(255, 255, 255, 0.08);
   --control-border: rgba(255, 255, 255, 0.16);
 }
@@ -58,6 +59,7 @@ h1, h2, h3, h4, .brand {
   --backdrop: rgba(42, 32, 36, 0.5);
   --nav-bg: rgba(250, 247, 242, 0.85);
   --nav-solid: #faf7f2;
+  --panel-bg: rgba(250, 247, 242, 0.8);
   --control-bg: rgba(255, 255, 255, 0.7);
   --control-border: rgba(42, 32, 36, 0.15);
 }
@@ -66,6 +68,16 @@ html { scroll-behavior: smooth; }
 
 /* Deja hueco para el menú fijo al saltar a una sección */
 section[id] { scroll-margin-top: 5rem; }
+
+/* Panel translúcido para que el texto corrido se lea sobre las partículas */
+.readable-panel {
+  background: var(--panel-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--surface-border);
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

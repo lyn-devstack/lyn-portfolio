@@ -47,6 +47,12 @@ defineProps({
   flex-wrap: wrap;
 }
 
+/* En móvil la ola pasa por detrás del texto: se le da un fondo translúcido */
+@media (max-width: 900px) {
+  .contact-section > * { position: relative; }
+  .contact-section { background: var(--panel-bg); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+}
+
 /* En escritorio el texto va a la izquierda y las partículas forman un sobre a la derecha */
 @media (min-width: 901px) {
   .contact-section {

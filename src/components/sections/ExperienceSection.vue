@@ -14,7 +14,7 @@ const { tm, rt } = useI18n()
     <h2 class="section-title">{{ $t('experience.title') }}</h2>
 
     <div class="experience-grid">
-      <div>
+      <div class="readable-panel">
         <h3 class="column-title">{{ $t('experience.jobsTitle') }}</h3>
         <ol class="timeline">
           <li v-for="job in tm('experience.jobs')" :key="rt(job.company)" class="timeline-item">
@@ -29,7 +29,7 @@ const { tm, rt } = useI18n()
         </ol>
       </div>
 
-      <div>
+      <div class="readable-panel">
         <h3 class="column-title">{{ $t('experience.educationTitle') }}</h3>
         <ul class="education-list">
           <li v-for="item in tm('experience.education')" :key="rt(item.title)" class="education-card">
