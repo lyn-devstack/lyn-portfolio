@@ -34,7 +34,7 @@ L = {
  projects=[
   ('matchaTest', 'Vue 3 · TypeScript · IndexedDB', 'Simulador de exámenes tipo test local-first: motor de reglas de puntuación, lector de guías docentes en PDF y repaso con sistema Leitner.'),
   ('Booky Bloom', 'Kotlin · Firebase · MVVM', 'App Android de lectura con comunidad de reseñas y roles de administrador y cliente. Proyecto final de DAM.'),
-  ('Infinite', 'PHP (MVC) · MySQL · AJAX', 'Gestión de citas, stock y usuarios para centros de estética, con disparadores para el control de inventario.')],
+  ('Lumière Studio', 'PHP (MVC) · MySQL · Docker', 'Gestión de citas, stock y usuarios para centros de estética, con disparadores para el control de inventario.')],
  edu=[
   ('Grado en Ingeniería en Tecnologías de la Información', 'UNED', '2026 – Actualidad'),
   ('CFGS Desarrollo de Aplicaciones Multiplataforma (DAM)', 'Ilerna · Nota media 9,14', '2024 – 2025'),
@@ -68,7 +68,7 @@ L = {
  projects=[
   ('matchaTest', 'Vue 3 · TypeScript · IndexedDB', 'Local-first multiple-choice exam simulator: configurable scoring engine, PDF syllabus parser and Leitner-based review deck.'),
   ('Booky Bloom', 'Kotlin · Firebase · MVVM', 'Android reading app with a review community and admin/client roles. Final project of the DAM degree.'),
-  ('Infinite', 'PHP (MVC) · MySQL · AJAX', 'Appointment, stock and user management for beauty centers, with database triggers for inventory control.')],
+  ('Lumière Studio', 'PHP (MVC) · MySQL · Docker', 'Appointment, stock and user management for beauty centers, with database triggers for inventory control.')],
  edu=[
   ("Bachelor's Degree in Information Technology Engineering", 'UNED', '2026 – Present'),
   ('Higher Technical Degree in Multiplatform App Development (DAM)', 'Ilerna · GPA 9.14/10', '2024 – 2025'),

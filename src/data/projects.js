@@ -2,18 +2,18 @@
 // details: pares [clave de labels, clave de projects.<id>] que se muestran en el modal
 export const projects = [
   {
-    id: 'infinite',
-    title: 'Infinite',
+    id: 'lumiere',
+    title: 'Lumière Studio',
     stack: ['PHP', 'MVC', 'MySQL', 'AJAX', 'Docker'],
-    image: './images/infinite-preview.png',
-    architectureImg: './images/infinite-db.png',
+    image: './images/lumiere-preview.jpg',
+    architectureImg: './images/lumiere-db.png',
     details: [
       ['challenge', 'challenge'],
       ['architecture', 'architecture'],
       ['security', 'security'],
       ['database', 'database']
     ],
-    repo: 'https://github.com/lyn-devstack/infinite-beauty-center',
+    repo: 'https://github.com/lyn-devstack/lumiere-booking',
     demo: null
   },
   {

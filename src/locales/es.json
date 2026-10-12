@@ -28,7 +28,7 @@
     "diagramAlt": "Diagrama técnico de {title}"
   },
   "projects": {
-    "infinite": {
+    "lumiere": {
       "description": "Gestión integral para centros de estética. Control de citas, stock y usuarios con arquitectura robusta.",
       "challenge": "Digitalizar una agenda física compleja para eliminar solapamientos de citas y centralizar la gestión de servicios.",
       "architecture": "Desarrollo basado en el patrón Modelo-Vista-Controlador (MVC) para garantizar la escalabilidad y el mantenimiento limpio del código.",

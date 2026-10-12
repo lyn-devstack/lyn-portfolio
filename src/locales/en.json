@@ -28,7 +28,7 @@
     "diagramAlt": "{title} technical diagram"
   },
   "projects": {
-    "infinite": {
+    "lumiere": {
       "description": "All-in-one management system for beauty centers. Robust appointment, stock, and user control.",
       "challenge": "Digitalizing a complex physical scheduling system to eliminate booking conflicts and centralize service management.",
       "architecture": "Development based on the Model-View-Controller (MVC) pattern to ensure scalability and clean code maintenance.",
