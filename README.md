@@ -15,7 +15,7 @@ Personal portfolio of **Leslie Carolyn**, full-stack web developer (Vue.js · Ty
 ## Features
 
 - **Bilingual (ES / EN)** with `vue-i18n`; the `<html lang>` attribute follows the selected language.
-- **Two themes**: *Deep Space* (dark, blue accent) and *Nebula* (light, pink accent), built on CSS custom properties.
+- **Two themes**: dark (indigo accent) and light (coral accent), built on CSS custom properties.
 - **Morphing 3D particles** with Three.js: 9,000 particles form an illustrated avatar in the hero, flow into a wave through the middle sections and become an envelope at the contact section, with a staggered transition driven by scroll and a mouse-repel effect. The avatar point cloud is precomputed from an illustration (`public/particles/avatar.bin`). Lazy-loaded, and static when the OS asks for reduced motion.
 - **Data-driven project cards** with links to code and live demos, plus a detail modal (architecture diagram, challenge, stack). The modal closes with `Esc`.
 - **Experience timeline, skills and downloadable CV** in both languages.
