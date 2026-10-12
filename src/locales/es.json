@@ -25,7 +25,9 @@
     "blueprint": "Plano técnico",
     "inside": "por dentro",
     "previewAlt": "Captura de {title}",
-    "diagramAlt": "Diagrama técnico de {title}"
+    "diagramAlt": "Diagrama técnico de {title}",
+    "video": "Vídeo",
+    "videoOf": "Vídeo de {title}"
   },
   "projects": {
     "lumiere": {

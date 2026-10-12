@@ -9,6 +9,7 @@ const props = defineProps({
 
 const { t, te } = useI18n()
 const isModalOpen = ref(false)
+const isVideoOpen = ref(false)
 
 const textKey = (key) => `projects.${props.project.id}.${key}`
 const details = computed(() =>
@@ -18,11 +19,11 @@ const note = computed(() => (te(textKey('note')) ? t(textKey('note')) : null))
 const modalTitleId = computed(() => `modal-title-${props.project.id}`)
 
 const onKeydown = (e) => {
-  if (e.key === 'Escape') isModalOpen.value = false
+  if (e.key === 'Escape') isModalOpen.value = isVideoOpen.value = false
 }
 
-// Bloquea el scroll de fondo y permite cerrar con Escape mientras el modal está abierto
-watch(isModalOpen, (open) => {
+// Bloquea el scroll de fondo y permite cerrar con Escape mientras un modal está abierto
+watch(() => isModalOpen.value || isVideoOpen.value, (open) => {
   document.body.style.overflow = open ? 'hidden' : ''
   if (open) window.addEventListener('keydown', onKeydown)
   else window.removeEventListener('keydown', onKeydown)
@@ -68,7 +69,23 @@ onUnmounted(() => {
          class="btn-secondary py-3 px-4 text-sm font-bold rounded-xl">
         {{ t('labels.demo') }}
       </a>
+      <button v-if="project.video" @click="isVideoOpen = true" class="btn-secondary py-3 px-4 text-sm font-bold rounded-xl">
+        {{ t('labels.video') }}
+      </button>
     </div>
+
+    <Teleport to="body">
+      <div v-if="isVideoOpen" :class="['project-modal', theme, 'fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-10']">
+        <div class="modal-backdrop absolute inset-0 backdrop-blur-md" @click="isVideoOpen = false"></div>
+        <div role="dialog" aria-modal="true" :aria-label="t('labels.videoOf', { title: project.title })"
+             class="modal-panel relative w-full max-w-5xl rounded-[1.5rem] p-3 md:p-4">
+          <button @click="isVideoOpen = false" :aria-label="t('labels.close')"
+                  class="modal-close absolute -top-10 right-2 text-3xl">&times;</button>
+          <video :src="project.video" :poster="project.image" controls autoplay muted playsinline
+                 class="w-full h-auto rounded-xl block"></video>
+        </div>
+      </div>
+    </Teleport>
 
     <Teleport to="body">
       <div v-if="isModalOpen" :class="['project-modal', theme, 'fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-10']">

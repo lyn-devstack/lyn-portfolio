@@ -25,7 +25,9 @@
     "blueprint": "Technical Blueprint",
     "inside": "Inside",
     "previewAlt": "{title} screenshot",
-    "diagramAlt": "{title} technical diagram"
+    "diagramAlt": "{title} technical diagram",
+    "video": "Video",
+    "videoOf": "{title} video"
   },
   "projects": {
     "lumiere": {

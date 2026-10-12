@@ -14,7 +14,9 @@ export const projects = [
       ['database', 'database']
     ],
     repo: 'https://github.com/lyn-devstack/lumiere-booking',
-    demo: null
+    demo: null,
+    // Recorrido grabado (la app necesita PHP + MySQL, no se puede alojar en GitHub Pages)
+    video: './videos/lumiere-demo.mp4'
   },
   {
     id: 'bookyBloom',
